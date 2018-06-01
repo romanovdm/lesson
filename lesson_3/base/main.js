@@ -77,7 +77,7 @@ price = addDiscound();
 
 //добавить продавца
 function addEmplose() {
-	for (var i = 0; i < 3; i++) {
+	for (var i = 0; i < 4; i++) {
 		let a = prompt("Введите имя продавца");
 
 		if ((typeof(a)) === 'string' && (typeof(a)) != 0 && a != '' && a.length < 50 && a != null) {
