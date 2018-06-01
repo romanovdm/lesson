@@ -1,5 +1,6 @@
 let budgetMonth = prompt("Ваш бюджет на месяц?");
 let name = prompt("Название вашего магазина?");
+let time = 19;
 
 let mainList = {
   budget: budgetMonth,
@@ -57,5 +58,15 @@ while(i) {
 shopGood(5);*/
 
 alert("Бюджет на 1 день составляет " + ((mainList.budget/30) ^ 0));
+
+if (time < 0 ) {
+	console.log('Такого не может быть');
+	} else if (time > 8 && time < 20) {
+			console.log('Время работать!')
+		} else if (time < 24) {
+			console.log('Уже слишком позно')
+		} else {
+			console.log('В сутках только 24 часа!!!')
+		}
 
 console.log(mainList);
